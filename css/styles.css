@@ -286,7 +286,7 @@ button {
 }
 
 .our-team-inner {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -398,16 +398,8 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
-  gap: 72px;
+  gap: 72px 24px;
 }
-
-/* .page-footer-wrapper {
-  margin-right: 120px;
-} */
-
-/* .page-footer-inner {
-  margin-right: 80px;
-} */
 
 .page-footer-inner-text {
   margin-bottom: 16px;
@@ -620,7 +612,7 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: #2e2f42;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -691,3 +683,90 @@ button {
   color: #4d5ae5;
 }
 /*--------------------------------------------------------*/
+
+/*------------------------ADAPTIVE/TABLET------------------------*/
+@media (min-width: 768px) {
+  /* HERO */
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
+  /* FEATURES */
+  .features-list {
+    column-gap: 24px;
+  }
+
+  .features-title {
+    text-align: left;
+  }
+
+  /* OUR-TEAM */
+  .our-team-list {
+    gap: 64px 24px;
+    padding: 0 92px;
+  }
+
+  /* OUR-PORTFOLIO */
+  .our-portfolio-list {
+    column-gap: 24px;
+  }
+
+  /* PAGE-FOOTER */
+  .page-footer .logo-link,
+  .page-footer-inner-text,
+  .page-footer-wrap-text {
+    text-align: left;
+  }
+
+  .page-footer-form {
+    gap: 24px;
+  }
+
+  .page-footer-input {
+    width: 264px;
+  }
+
+  /* MODAL */
+  .modal {
+    padding-left: 24px;
+    padding-right: 24px;
+    min-width: 408px;
+    min-height: 584px;
+  }
+  .modal-text {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  /* HERO */
+  .hero {
+    padding: 112px 0;
+  }
+
+  .hero-title {
+    margin-bottom: 36px;
+  }
+
+  /* FEATURES */
+  .features-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* OUR-TEAM */
+  .our-team-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* OUR-PORTFOLIO */
+  .our-portfolio-list {
+    row-gap: 72px;
+  }
+
+  .our-portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+/*---------------------------------------------------------------*/
